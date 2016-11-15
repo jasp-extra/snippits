@@ -7,7 +7,7 @@ Dialog::Dialog(QWidget *parent) :
 {
 	ui->setupUi(this);
 	QStringList list;
-	//Below is the list of features
+	//Below is the short list of features
 	list << "aap" << "noten" << "mies" << "toto" << "tata!" << "blabla";
 	_model = new QStringListModel(this);
 	_model->setStringList(list);
