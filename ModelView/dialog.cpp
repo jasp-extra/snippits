@@ -10,7 +10,7 @@ Dialog::Dialog(QWidget *parent) :
 	//Below is the short list of named features!
 
 
-    list << "aap" << "noten" << "mies" << "toto" << "tata!" << "bla";
+    list << "aap" << "noten" << "mies" << "toto" << "tata!" << "blo";
 	_model = new QStringListModel(this);
 	_model->setStringList(list);
 	ui->comboBox->setModel(_model);
@@ -26,7 +26,7 @@ Dialog::~Dialog()
 
 void Dialog::on_pushButton_clicked()
 {
-    //Add!
+    //Add
 	int row = _model->rowCount();
 	_model->insertRows(row, 1);
 	QModelIndex index = _model->index(row);
@@ -38,7 +38,7 @@ void Dialog::on_pushButton_clicked()
 
 void Dialog::on_pushButton_2_clicked()
 {
-	//Insert
+    //Insert
 	int row = ui->listView->currentIndex().row();
 	_model->insertRows(row, 1);
 	QModelIndex index = _model->index(row);
@@ -49,6 +49,6 @@ void Dialog::on_pushButton_2_clicked()
 
 void Dialog::on_pushButton_3_clicked()
 {
-	//Delete
+    //Deleted
 	_model->removeRows(ui->listView->currentIndex().row(), 1);
 }
