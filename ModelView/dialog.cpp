@@ -10,7 +10,11 @@ Dialog::Dialog(QWidget *parent) :
     //Below is the short list of named features
 
 
+<<<<<<< Updated upstream
     list << "aapje" << "noten" << "mies" << "toto" << "tata!" << "blhho";
+=======
+    list << "aap" << "noot" << "mies" << "toto" << "tata!" << "blhho";
+>>>>>>> Stashed changes
 	_model = new QStringListModel(this);
 	_model->setStringList(list);
 	ui->comboBox->setModel(_model);
