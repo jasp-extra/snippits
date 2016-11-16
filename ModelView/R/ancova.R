@@ -1816,3 +1816,6 @@ Ancova <- function(dataset=NULL, options, perform="run", callback=function(...) 
 	
 	list(result=qqPlot, status=status, stateqqPlot=stateqqPlot)
 }
+
+
+#this is a change to test... bye alex 
